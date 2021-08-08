@@ -1,0 +1,142 @@
+Category,Item,Serving Size,Calories,Carbohydrates,Carbohydrates (% Daily Value),Sugars
+Beverages,Coca-Cola Classic (Small),16 fl oz cup,140,39,13,39
+Beverages,Coca-Cola Classic (Medium),21 fl oz cup,200,55,18,55
+Beverages,Coca-Cola Classic (Large),30 fl oz cup,280,76,25,76
+Beverages,Coca-Cola Classic (Child),12 fl oz cup,100,28,9,28
+Beverages,Diet Coke (Small),16 fl oz cup,0,0,0,0
+Beverages,Diet Coke (Medium),21 fl oz cup,0,0,0,0
+Beverages,Diet Coke (Large),30 fl oz cup,0,0,0,0
+Beverages,Diet Coke (Child),12 fl oz cup,0,0,0,0
+Beverages,Dr Pepper (Small),16 fl oz cup,140,37,12,35
+Beverages,Dr Pepper (Medium),21 fl oz cup,190,53,18,51
+Beverages,Dr Pepper (Large),30 fl oz cup,270,72,24,70
+Beverages,Dr Pepper (Child),12 fl oz cup,100,27,9,26
+Beverages,Diet Dr Pepper (Small),16 fl oz cup,0,0,0,0
+Beverages,Diet Dr Pepper (Medium),21 fl oz cup,0,0,0,0
+Beverages,Diet Dr Pepper (Large),30 fl oz cup,0,0,0,0
+Beverages,Diet Dr Pepper (Child),12 fl oz cup,0,0,0,0
+Beverages,Sprite (Small),16 fl oz cup,140,37,12,37
+Beverages,Sprite (Medium),21 fl oz cup,200,54,18,54
+Beverages,Sprite (Large),30 fl oz cup,280,74,25,74
+Beverages,Sprite (Child),12 fl oz cup,100,27,9,27
+Beverages,1% Low Fat Milk Jug,1 carton (236 ml),100,12,4,12
+Beverages,Fat Free Chocolate Milk Jug,1 carton (236 ml),130,23,8,22
+Beverages,Minute Maid 100% Apple Juice Box,6 fl oz (177 ml),80,21,7,19
+Beverages,Minute Maid Orange Juice (Small),12 fl oz cup,150,34,11,30
+Beverages,Minute Maid Orange Juice (Medium),16 fl oz cup,190,44,15,39
+Beverages,Minute Maid Orange Juice (Large),22 fl oz cup,280,65,22,58
+Beverages,Dasani Water Bottle,16.9 fl oz,0,0,0,0
+Coffee & Tea,Iced Tea (Small),16 fl oz cup,0,0,0,0
+Coffee & Tea,Iced Tea (Medium),21 fl oz cup,0,0,0,0
+Coffee & Tea,Iced Tea (Large),30 fl oz cup,0,0,0,0
+Coffee & Tea,Iced Tea (Child),12 fl oz cup,0,0,0,0
+Coffee & Tea,Sweet Tea (Small),16 fl oz cup,150,36,12,36
+Coffee & Tea,Sweet Tea (Medium),21 fl oz cup,180,45,15,45
+Coffee & Tea,Sweet Tea (Large),30 fl oz cup,220,54,18,54
+Coffee & Tea,Sweet Tea (Child),12 fl oz cup,110,27,9,27
+Coffee & Tea,Coffee (Small),12 fl oz cup,0,0,0,0
+Coffee & Tea,Coffee (Medium),16 fl oz cup,0,0,0,0
+Coffee & Tea,Coffee (Large),16 fl oz cup,0,0,0,0
+Coffee & Tea,Latte (Small),12 fl oz cup,170,15,5,12
+Coffee & Tea,Latte (Medium),16 fl oz cup,210,18,6,15
+Coffee & Tea,Latte (Large),20 fl oz cup,280,24,8,20
+Coffee & Tea,Caramel Latte (Small),12 fl oz cup,270,40,13,38
+Coffee & Tea,Caramel Latte (Medium),16 fl oz cup,340,50,17,48
+Coffee & Tea,Caramel Latte (Large),20 fl oz cup,430,62,21,59
+Coffee & Tea,Hazelnut Latte (Small),12 fl oz cup,270,40,13,38
+Coffee & Tea,Hazelnut Latte (Medium),16 fl oz cup,330,50,17,47
+Coffee & Tea,Hazelnut Latte (Large),20 fl oz cup,430,62,21,58
+Coffee & Tea,French Vanilla Latte (Small),12 fl oz cup,260,38,13,36
+Coffee & Tea,French Vanilla Latte (Medium),16 fl oz cup,330,48,16,45
+Coffee & Tea,French Vanilla Latte (Large),20 fl oz cup,420,60,20,56
+Coffee & Tea,Latte with Sugar Free French Vanilla Syrup (Small),12 fl oz cup,210,24,8,12
+Coffee & Tea,Latte with Sugar Free French Vanilla Syrup (Medium),16 fl oz cup,260,29,10,15
+Coffee & Tea,Latte with Sugar Free French Vanilla Syrup (Large),20 fl oz cup,330,37,12,20
+Coffee & Tea,Nonfat Latte (Small),12 fl oz cup,100,15,5,13
+Coffee & Tea,Nonfat Latte (Medium),16 fl oz cup,130,19,6,16
+Coffee & Tea,Nonfat Latte (Large),20 fl oz cup,170,25,8,21
+Coffee & Tea,Nonfat Caramel Latte (Small),12 fl oz cup,200,41,14,39
+Coffee & Tea,Nonfat Caramel Latte (Medium),16 fl oz cup,250,51,17,48
+Coffee & Tea,Nonfat Caramel Latte (Large),20 fl oz cup,310,63,21,59
+Coffee & Tea,Nonfat Hazelnut Latte (Small),12 fl oz cup,200,40,13,38
+Coffee & Tea,Nonfat Hazelnut Latte (Medium),16 fl oz cup,250,51,17,48
+Coffee & Tea,Nonfat Hazelnut Latte (Large),20 fl oz cup,310,63,21,59
+Coffee & Tea,Nonfat French Vanilla Latte (Small),12 fl oz cup,190,39,13,37
+Coffee & Tea,Nonfat French Vanilla Latte (Medium),16 fl oz cup,240,49,16,46
+Coffee & Tea,Nonfat French Vanilla Latte (Large),20 fl oz cup,300,60,20,56
+Coffee & Tea,Nonfat Latte with Sugar Free French Vanilla Syrup (Small),12 fl oz cup,140,24,8,13
+Coffee & Tea,Nonfat Latte with Sugar Free French Vanilla Syrup (Medium),16 fl oz cup,170,30,10,16
+Coffee & Tea,Nonfat Latte with Sugar Free French Vanilla Syrup (Large),20 fl oz cup,220,38,13,21
+Coffee & Tea,Mocha (Small),12 fl oz cup,340,49,16,42
+Coffee & Tea,Mocha (Medium),16 fl oz cup,410,60,20,53
+Coffee & Tea,Mocha (Large),20 fl oz cup,500,72,24,63
+Coffee & Tea,Mocha with Nonfat Milk (Small),12 fl oz cup,270,49,16,43
+Coffee & Tea,Mocha with Nonfat Milk (Medium),16 fl oz cup,330,60,20,53
+Coffee & Tea,Mocha with Nonfat Milk (Large),20 fl oz cup,390,73,24,64
+Coffee & Tea,Caramel Mocha (Small),12 fl oz cup,320,45,15,40
+Coffee & Tea,Caramel Mocha (Medium),16 fl oz cup,390,55,18,50
+Coffee & Tea,Caramel Mocha (Large),20 fl oz cup,480,66,22,60
+Coffee & Tea,Nonfat Caramel Mocha (Small),12 fl oz cup,250,45,15,41
+Coffee & Tea,Nonfat Caramel Mocha (Medium),16 fl oz cup,310,56,19,51
+Coffee & Tea,Nonfat Caramel Mocha (Large),20 fl oz cup,370,67,22,61
+Coffee & Tea,Hot Chocolate (Small),12 fl oz cup,360,50,17,45
+Coffee & Tea,Hot Chocolate (Medium),16 fl oz cup,440,61,20,56
+Coffee & Tea,Hot Chocolate (Large),20 fl oz cup,540,73,24,68
+Coffee & Tea,Hot Chocolate with Nonfat Milk (Small),12 fl oz cup,280,50,17,46
+Coffee & Tea,Hot Chocolate with Nonfat Milk (Medium),16 fl oz cup,340,61,20,57
+Coffee & Tea,Hot Chocolate with Nonfat Milk (Large),20 fl oz cup,400,74,25,69
+Coffee & Tea,Regular Iced Coffee (Small),16 fl oz cup,140,23,8,22
+Coffee & Tea,Regular Iced Coffee (Medium),22 fl oz cup,190,31,10,30
+Coffee & Tea,Regular Iced Coffee (Large),32 fl oz cup,270,47,16,45
+Coffee & Tea,Caramel Iced Coffee (Small),16 fl oz cup,130,22,7,21
+Coffee & Tea,Caramel Iced Coffee (Medium),22 fl oz cup,180,29,10,28
+Coffee & Tea,Caramel Iced Coffee (Large),32 fl oz cup,260,43,14,42
+Coffee & Tea,Hazelnut Iced Coffee (Small),16 fl oz cup,130,21,7,20
+Coffee & Tea,Hazelnut Iced Coffee (Medium),22 fl oz cup,180,29,10,28
+Coffee & Tea,Hazelnut Iced Coffee (Large),32 fl oz cup,250,43,14,41
+Coffee & Tea,French Vanilla Iced Coffee (Small),16 fl oz cup,120,20,7,19
+Coffee & Tea,French Vanilla Iced Coffee (Medium),22 fl oz cup,170,27,9,26
+Coffee & Tea,French Vanilla Iced Coffee (Large),32 fl oz cup,240,41,14,39
+Coffee & Tea,Iced Coffee with Sugar Free French Vanilla Syrup (Small),16 fl oz cup,80,9,3,1
+Coffee & Tea,Iced Coffee with Sugar Free French Vanilla Syrup (Medium),22 fl oz cup,120,12,4,2
+Coffee & Tea,Iced Coffee with Sugar Free French Vanilla Syrup (Large),32 fl oz cup,160,18,6,2
+Coffee & Tea,Iced Mocha (Small),12 fl oz cup,290,41,14,34
+Coffee & Tea,Iced Mocha (Medium),16 fl oz cup,350,50,17,43
+Coffee & Tea,Iced Mocha (Large),22 fl oz cup,480,70,23,62
+Coffee & Tea,Iced Mocha with Nonfat Milk (Small),12 fl oz cup,240,41,14,35
+Coffee & Tea,Iced Mocha with Nonfat Milk (Medium),16 fl oz cup,290,50,17,43
+Coffee & Tea,Iced Mocha with Nonfat Milk (Large),22 fl oz cup,390,71,24,62
+Coffee & Tea,Iced Caramel Mocha (Small),12 fl oz cup,280,38,13,33
+Coffee & Tea,Iced Caramel Mocha (Medium),16 fl oz cup,340,46,15,41
+Coffee & Tea,Iced Caramel Mocha (Large),22 fl oz cup,460,65,22,59
+Coffee & Tea,Iced Nonfat Caramel Mocha (Small),12 fl oz cup,230,38,13,33
+Coffee & Tea,Iced Nonfat Caramel Mocha (Medium),16 fl oz cup,270,47,16,41
+Coffee & Tea,Iced Nonfat Caramel Mocha (Large),22 fl oz cup,370,65,22,59
+Coffee & Tea,Frappé Mocha (Small),12 fl oz cup,450,65,22,57
+Coffee & Tea,Frappé Mocha (Medium),16 fl oz cup,550,80,27,71
+Coffee & Tea,Frappé Mocha (Large),22 fl oz cup,670,98,33,88
+Coffee & Tea,Frappé Caramel (Small),12 fl oz cup,450,64,21,57
+Coffee & Tea,Frappé Caramel (Medium),16 fl oz cup,550,79,26,71
+Coffee & Tea,Frappé Caramel (Large),22 fl oz cup,670,96,32,88
+Coffee & Tea,Frappé Chocolate Chip (Small),12 fl oz cup,530,76,25,67
+Coffee & Tea,Frappé Chocolate Chip (Medium),16 fl oz cup,630,91,30,81
+Coffee & Tea,Frappé Chocolate Chip (Large),22 fl oz cup,760,111,37,99
+Shakes,Vanilla Shake (Small),12 fl oz cup,530,86,29,63
+Shakes,Vanilla Shake (Medium),16 fl oz cup,660,109,36,81
+Shakes,Vanilla Shake (Large),22 fl oz cup,820,135,45,101
+Shakes,Strawberry Shake (Small),12 fl oz cup,550,90,30,79
+Shakes,Strawberry Shake (Medium),16 fl oz cup,690,114,38,100
+Shakes,Strawberry Shake (Large),22 fl oz cup,850,140,47,123
+Shakes,Chocolate Shake (Small),12 fl oz cup,560,91,30,77
+Shakes,Chocolate Shake (Medium),16 fl oz cup,700,114,38,97
+Shakes,Chocolate Shake (Large),22 fl oz cup,850,141,47,120
+Shakes,Shamrock Shake (Medium),16 fl oz cup,660,109,36,93
+Shakes,Shamrock Shake (Large),22 fl oz cup,820,135,45,115
+Shakes,McFlurry with M&M’s Candies (Small),10.9 oz (310 g),650,96,32,89
+Shakes,McFlurry with M&M’s Candies (Medium),16.2 oz (460 g),930,139,46,128
+Shakes,McFlurry with M&M’s Candies (Snack),7.3 oz (207 g),430,64,21,59
+Shakes,McFlurry with Oreo Cookies (Small),10.1 oz (285 g),510,80,27,64
+Shakes,McFlurry with Oreo Cookies (Medium),13.4 oz (381 g),690,106,35,85
+Shakes,McFlurry with Oreo Cookies (Snack),6.7 oz (190 g),340,53,18,43
+Shakes,McFlurry with Reese's Peanut Butter Cups (Medium),14.2 oz (403 g),810,114,38,103
+Shakes,McFlurry with Reese's Peanut Butter Cups (Snack),7.1 oz (202 g),410,57,19,51

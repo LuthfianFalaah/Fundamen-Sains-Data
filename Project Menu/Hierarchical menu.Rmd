@@ -1,0 +1,97 @@
+---
+title: "Hierarchical Clustering Pada Menu Minuman McDonalds"
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+    highlight: tango
+---
+
+#### 18523202/18523223/18523233
+
+#### Data Menu Makanan 
+Pada analisis data ini kami menggunakan sebuah dataset dari Kaggle dataset yang telah dimodifikasi dengan memilih menu minuman dan memangkas beberapa fitur tanpa mengubah originalitas data yang ada, sehingga menjadi dataset baru bernama `menuminuman`, dengan dataset asli bernama (`Facts for McDonald's Menu`). Data ini berisi beberapa kandungan makanan dan minuman yang disajikan oleh restoran cepat saji McDonalds beserta kecukupan hariannya, dari setiap minuman tersebut mmemiliki kandungan seperti jumlah porsi,  kalori, gula, dan karbohidrat. Rinciannya adalah : kategori minumannya (`Category`), minuman yang disajikan (`item`), ukuran sajian setiap porsi (`Serving.Size`), kandungan kalori (`Calories`), Karbohidrat (`Carbohydrates`), Persentase kecukupan harian karbohidrat(`Carbohydrates % Daily.Value.`), serta kandungan gulanya (`Sugars`). 
+
+Berikut disajikan dataset `menuminuman`.
+```{r, attr.source = ".numberLines"}
+menuminuman = read.csv('menuminuman.csv') 
+summary(menuminuman)
+```
+
+#### Proses Analisis Data (Exploratory Data Analysis) 
+Sistem pembuatan grafik dengan 'ggplot' dapat dilakukan dengan menggunakan 'ggplot2' yang merupakan implementasi dari konsep *Grammar of graphic* untuk bahasa pemrograman R.Membuat analisis dari dataset 'menuminuman' yang tersedia dalam paket 'ggplot2'.
+
+```{r load-package}
+library(ggplot2)
+```
+
+Selanjutnya kami menggunakan fungsi 'qplot()' untuk membuat grafik menggunakan 'ggplot2'. 
+```{r}
+qplot(x = Sugars, y = Carbohydrates, colour = Calories, data = menuminuman)
+```
+
+Agar visualisasi data dapat dilihat dengan lebih leluasa, maka grafik di atas dapat diolah dengan menggunakan penulisan kode sebagai berikut:
+```{r}
+ggplot(data = menuminuman,
+       mapping = aes(x = Carbohydrates....Daily.Value., y = Carbohydrates, colour = Calories)) + 
+  geom_point() 
+```
+Berikut untuk menyimpan grafik ke dalam boyek R bernama 'plot_menuminuman' dan kemudian menyimpannya dalam file komputer dalam satu folder dengan project .Rmd yang sedang dijalankan dengan nama berkas 'minuman.png.
+
+```{r}
+plot_minuman <- ggplot(data=menuminuman) +
+  geom_point(mapping = aes(x = Carbohydrates....Daily.Value.,
+                           y = Carbohydrates, colour = Calories))
+plot_minuman 
+ggsave(filename = "minuman.png", plot = plot_minuman)
+```
+Dari sebaran setiap variabel berdasarakan empat barplot di atas, kami mendapatkan informasi tentang data menuminuman tersebut bahwa fitur Carbohydrates, Sugars, dan Calories memiliki nilai yang sebanding.Menurut data pada fitur Carbohydrates....Daily.Value menunjukan persentase karbohidrat yang terkandung cukup tinggi, artinya beberapa minuman memang sangat tinggi gula dan ada juga yang sangat rendah bahkan tidak ada sama sekali.
+
+Kemudian kami menggunakan sebuah alternatif untuk mendapatkan visualisasi dari setiap variabel menggunakan `barplot()`. Pada baris pertama kami membuat sebuat data frame dari data set `menuminuman` dan menambahkan satu kolom berisi kategori menu minuman (Category). Pada baris kedua kami tampilkan nama menu minuman yang ingin di visualisasikan, untuk mengubah orientasi label pada sumbu vertikal sehingga dapat terbaca secara horizontal (Item) kebetulan data nama minuman yang kami tampilkan data minuman nomor 1 hingga 10(random bebas menampilkan nomor berapa), lalu Baris ketiga dan keempat untuk mengatur margin agar sesuai dengan yang kami harapkan, pada baris ini kami atur agar visualisasi tepat menampilkan nama minuman (bersifat random sesuai dengan keinginan letak dari data yang di visualisasi). Baris kelima berfungsi untuk membuat barplot untuk variabel kalori `Calories`; kemudian karbohidrat`Carbohydrates`; lalu persentase karbohidrat harian dari minuman`Carbohydrates....Daily.Value`; serta kandungan gula yang ada didalam minuman tersebut`Sugars`.
+
+```{r, attr.source = ".numberLines"}
+df <- data.frame(Category=rownames(menuminuman), menuminuman)
+df <- df[1:10 ,]
+par(las=1) 
+par(mar=c(4,10,6,2)) 
+barplot(df$Calories, names.arg = df$Item, horiz = TRUE, cex.names = 0.8, 
+        xlab = "Berdasarkan Kalori Terkandung")
+barplot(df$Carbohydrates, names.arg = df$Item, horiz = TRUE, cex.names = 0.8, 
+        xlab = "Berdasarkan Karbohidrat Terkandung ")
+barplot(df$Carbohydrates....Daily.Value., names.arg = df$Item, horiz = TRUE, cex.names = 0.8,
+        xlab = "Berdasarkan % Karbohidrat Harian")
+barplot(df$Sugars, names.arg = df$Item, horiz = TRUE, cex.names = 0.8, 
+        xlab = "Berdasarkan Gula Terkandung  ")
+```
+
+#### Hierarchical Clustering
+Setelah melakukan analisis di sini kami mencoba menggunakan metode hierarchical clustering menggunakan fungsi `hclust`. Pada bagian ini hanya digunakan empat variabel, maka variabel `Item` dihilangkan menggunakan source code Baris 1. Fungsi `hclust` menerima matriks jarak (dissimilarity meassure dari setiap pasang variabel), maka kami menghitung matriks tersebut mengunakan Baris ke 2. Pada Baris 3, kami melakukan hiearchical clustering dengan metode `complete linkage` Dengan memperlakukan data sebagai kelompok, selanjutnya kami pilih jarak dua kelompok yang terkecil.Pada baris ke 4 membuat plot dendrogram dari hasil clustering; parameter `cex` emngatur besar font untuk label pada sumbu x, `hang` mengatur posisi label terhadap sumbu y.
+
+```{r, attr.source = ".numberLines"}
+df <- scale(df[, c(5,6,7,8)])
+d <- dist(df, method = "euclidean")
+clusters <- hclust(d, method = "complete" )
+plot(clusters, cex = 0.9, hang = -1)
+```
+
+Kemudian kami menggunakan fungsi `rect.hclust()` untuk menggambar kotak pada sejumlah klaster yang kami inginkan agar klaster yang terbentuk dapat jelas terlihat. Sebagai contoh, kami ingin melihat 3 klaster dari hasil clustering di atas. Maka kami set `k=3`(bersifat random sesuai dengan klaster yang diharapkan asalkan klaster lebih sedikit dari jumlah data) dan terdapat parameter `border` mengatur warna kotak dari setiap klaster.Klaster pertama untuk minuman yang memiliki kandungan gula tinggi dengan kotak warna merah, klaster kedua untuk minuman yang tidak ada kandungan gula sama sekali, dan klaster ketiga untuk minuman yang memiliki kandungan gula tidak terlalu tinggi.   
+
+```{r}
+plot(clusters, cex = 0.9, hang = -1)
+rect.hclust(clusters, k = 3, border = 2:5)
+```
+
+Dapat ditarik kesimpulan bahwa kandungan beberapa minuman yang terdapat di restoran cepat saji Mcdonalds memiliki kandungan karbohidrat, kalori dan gula yang cukup tinggi, namun ada beberapa minuman juga yang rendah karbohidrat, kalori dan gula bahkan ada yang sama sekali tidak ada. Untuk struktur penulisan kode R di atas setidaknya terdapat tiga komponen utama untuk membuat grafik, yaitu :
+
+1. *Data*
+2. *Aesthetic mapping*
+3. *Geometric object*
+
+Bentuk *Geometric object* dalam kode berikut :
+
+```{r}
+?aes
+?geom_point
+```
+
+

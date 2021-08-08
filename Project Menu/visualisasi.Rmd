@@ -1,0 +1,61 @@
+---
+title: "visualisation"
+output:
+  pdf_document: default
+  html_document: default
+  word_document: default
+---
+
+Sistem pembuatan grafik dengan 'ggplot' dapat dilakukan dengan menggunakan 'ggplot2' yang merupakan implementasi dari konsep *Grammar of graphic* untuk bahasa pemrograman R.
+
+```{r load-package}
+library(ggplot2)
+```
+
+Membuat grafik dari dataset 'minuman' yang tersedia dalam paket 'ggplot2'. Berikut kode untuk mengetahui informasi data 'minuman'
+
+```{r}
+menuminuman
+?menuminuman
+str(menuminuman)
+```
+
+
+Kita dapat menggunakan fungsi 'qplot()' untuk membuat grafik menggunakan 'ggplot2'. 
+
+```{r}
+qplot(x = Sugars, y = Carbohydrates, colour = Calories, data = menuminuman)
+```
+
+Untuk membuat visualisasi data dengan lebih leluasa. Grafik di atas dapat diolah dengan menggunakan penulisan kode sebagai berikut:
+
+```{r}
+ggplot(data = menuminuman, mapping = aes(x = Carbohydrates....Daily.Value., y = Carbohydrates, colour = Calories)) + 
+  geom_point() 
+```
+
+Berikut untuk menyimpan grafik ke dalam boyek R bernama 'plot_minuman' dan kemudian menyimpannya dalam komputer dengan nama berkas 'minuman.png'
+
+```{r}
+plot_minuman <- ggplot(data=menuminuman) +
+  geom_point(mapping = aes(x = Carbohydrates....Daily.Value., y = Carbohydrates, colour = Calories))
+# Saat output disimpan ke dalam obyek R, grafik tidak otomatis dicetak pada layar
+
+plot_minuman #Untuk mencetak grafik, harus menjalankan nama obyek R yang sebelumnya dibuat
+
+ggsave(filename = "minuman.png", plot = plot_minuman)
+```
+
+
+Dapat ditarik kesimpulan berdasarkan struktur penulisan kode R di atas bahwa setidaknya terdapat tiga komponen utama untuk membuat grafik, yaitu :
+
+1. *Data*
+2. *Aesthetic mapping*
+3. *Geometric object*
+
+Bentuk *Geometric object* dalam kode berikut :
+
+```{r}
+?aes
+?geom_point
+```
